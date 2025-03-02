@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C.A.S.A. de Padua</title>
+    <!-- Fuentes modernas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand hover-scale" href="#">
+                <img src="assets/logo.png" alt="CASA de Padua" height="60" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link nav-btn hover-lift" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-btn hover-lift" href="#disciplinas">Disciplinas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-btn hover-lift" href="#historia">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-btn hover-lift" href="#actividades">Actividades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-btn hover-lift" href="#noticias">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-btn hover-lift" href="#contacto">Contacto</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="#contacto" class="btn btn-primary btn-asociate">
+                            <span class="btn-text">Asociate</span>
+                            <span class="btn-hover">¡Unite!</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Carousel -->
+    <section id="inicio" class="hero-section">
+        <div id="disciplinasCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#disciplinasCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Básquet"></button>
+                <button type="button" data-bs-target="#disciplinasCarousel" data-bs-slide-to="1" aria-label="Vóley"></button>
+                <button type="button" data-bs-target="#disciplinasCarousel" data-bs-slide-to="2" aria-label="Natación"></button>
+            </div>
+            <div class="carousel-inner">
+                <!-- Básquet -->
+                <div class="carousel-item active">
+                    <img src="assets/basquet.png" class="d-block" alt="Básquet">
+                    <div class="carousel-caption">
+                        <h2>Básquet</h2>
+                        <p class="lead">Formá parte de nuestros equipos de básquet en todas las categorías</p>
+                        <div class="mt-4">
+                            <a href="#disciplinas" class="btn btn-primary btn-lg hover-lift me-3">Conocé más</a>
+                            <a href="#contacto" class="btn btn-outline-light btn-lg hover-lift">Contactanos</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Vóley -->
+                <div class="carousel-item">
+                    <img src="assets/voley.png" class="d-block" alt="Vóley">
+                    <div class="carousel-caption">
+                        <h2>Vóley</h2>
+                        <p class="lead">Descubrí tu pasión por el vóley en C.A.S.A. de Padua</p>
+                        <div class="mt-4">
+                            <a href="#disciplinas" class="btn btn-primary btn-lg hover-lift me-3">Conocé más</a>
+                            <a href="#contacto" class="btn btn-outline-light btn-lg hover-lift">Contactanos</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Natación -->
+                <div class="carousel-item">
+                    <img src="assets/natacion.png" class="d-block" alt="Natación">
+                    <div class="carousel-caption">
+                        <h2>Natación</h2>
+                        <p class="lead">Aprendé a nadar con los mejores profesores</p>
+                        <div class="mt-4">
+                            <a href="#disciplinas" class="btn btn-primary btn-lg hover-lift me-3">Conocé más</a>
+                            <a href="#contacto" class="btn btn-outline-light btn-lg hover-lift">Contactanos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#disciplinasCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#disciplinasCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Disciplinas Section -->
+    <section id="disciplinas" class="py-5 gradient-section">
+        <div class="container">
+            <h2 class="text-center mb-5">Nuestras Disciplinas</h2>
+            <div class="row g-4">
+                <!-- Básquet Card -->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 hover-lift">
+                        <div class="card-image-wrapper">
+                            <img src="assets/basquet.png" class="card-img-top" alt="Básquet">
+                            <div class="card-overlay">
+                                <div class="overlay-content">
+                                    <h3 class="text-white mb-3">Básquet</h3>
+                                    <p class="text-white mb-4">Formamos jugadores desde las categorías infantiles hasta primera división.</p>
+                                    <a href="#" class="btn btn-light hover-scale">Más información</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title h4 mb-3">Básquet</h3>
+                            <p class="card-text mb-4">Formamos jugadores desde las categorías infantiles hasta primera división. ¡Unite a nuestro equipo!</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="#" class="btn btn-primary hover-lift">Más información</a>
+                                <span class="text-muted">Todas las edades</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Vóley Card -->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 hover-lift">
+                        <div class="card-image-wrapper">
+                            <img src="assets/voley.png" class="card-img-top" alt="Vóley">
+                            <div class="card-overlay">
+                                <div class="overlay-content">
+                                    <h3 class="text-white mb-3">Vóley</h3>
+                                    <p class="text-white mb-4">Equipos masculinos y femeninos en todas las categorías.</p>
+                                    <a href="#" class="btn btn-light hover-scale">Más información</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title h4 mb-3">Vóley</h3>
+                            <p class="card-text mb-4">Equipos masculinos y femeninos en todas las categorías. ¡Vení a ser parte!</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="#" class="btn btn-primary hover-lift">Más información</a>
+                                <span class="text-muted">Todas las edades</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Natación Card -->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 hover-lift">
+                        <div class="card-image-wrapper">
+                            <img src="assets/natacion.png" class="card-img-top" alt="Natación">
+                            <div class="card-overlay">
+                                <div class="overlay-content">
+                                    <h3 class="text-white mb-3">Natación</h3>
+                                    <p class="text-white mb-4">Instalaciones climatizadas y profesores certificados.</p>
+                                    <a href="#" class="btn btn-light hover-scale">Más información</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title h4 mb-3">Natación</h3>
+                            <p class="card-text mb-4">Aprendé a nadar con los mejores profesores en nuestras instalaciones climatizadas.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="#" class="btn btn-primary hover-lift">Más información</a>
+                                <span class="text-muted">Todas las edades</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="#actividades" class="btn btn-lg btn-primary hover-lift">Ver todas las actividades</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Historia Section -->
+    <section class="parallax-section">
+        <div class="parallax-overlay"></div>
+        <div class="container position-relative">
+            <div class="row min-vh-50 align-items-center">
+                <div class="col-12 text-center text-white">
+                    <h2 class="display-4 mb-4">Nuestra Historia</h2>
+                    <p class="lead">Desde 1926 formando parte de la comunidad de Padua</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="historia" class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="sede-image-container">
+                        <img src="assets/sede.png" alt="Sede de C.A.S.A. de Padua" class="img-fluid rounded shadow-lg">
+                    </div>
+                </div>
+            </div>
+            <div class="row timeline-modern">
+                <div class="col-lg-3">
+                    <div class="timeline-item">
+                        <span class="year">1926</span>
+                        <div class="content">
+                            <h4>Los Orígenes</h4>
+                            <p>El 12 de diciembre nace como Club Lancaster, un equipo de fútbol que sentaría las bases de nuestra institución. Los fundadores obtuvieron las primeras camisetas del Ituzaingó Golf Club, estableciendo nuestros emblemáticos colores: amarillo, negro y violeta.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="timeline-item">
+                        <span class="year">1928</span>
+                        <div class="content">
+                            <h4>Nueva Identidad</h4>
+                            <p>El club adopta su nombre actual: Club Atlético San Antonio de Padua. Se consolida como una institución barrial donde se practican diversos deportes y se realizan actividades sociales y culturales, incluyendo los tradicionales festejos de carnaval.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="timeline-item">
+                        <span class="year">1981-1995</span>
+                        <div class="content">
+                            <h4>Era del Rugby</h4>
+                            <p>Incorporamos al Padua Rugby Club (fundado en 1955). El equipo alcanzó su punto más alto al llegar a la primera división de la URBA en 1995, marcando una época dorada en nuestra historia deportiva.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="timeline-item">
+                        <span class="year">2013-Presente</span>
+                        <div class="content">
+                            <h4>Renovación y Crecimiento</h4>
+                            <p>El equipo de rugby y hockey se independiza formando CASA de Padua Rugby. Desde entonces, nos hemos enfocado en ampliar nuestras actividades deportivas y culturales, modernizando nuestras instalaciones para brindar la mejor experiencia a nuestros socios.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="historia-detalle p-4">
+                        <h3 class="text-center mb-4">Un Legado que Perdura</h3>
+                        <p class="text-center">A lo largo de casi 100 años, C.A.S.A. de Padua ha sido un pilar fundamental en la comunidad, evolucionando desde un club de fútbol hasta convertirse en una institución multideportiva y cultural. Hoy ofrecemos una amplia gama de actividades que incluyen aikido, aquagym, básquet, fútbol femenino, gimnasia rítmica, judo, natación, patín artístico, y muchas más, manteniendo vivo el espíritu comunitario que nos caracteriza desde nuestros inicios.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Actividades Section -->
+    <section id="actividades" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Nuestras Actividades</h2>
+            <div class="row g-4">
+                <!-- Deportivas -->
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title mb-4">Actividades Deportivas</h3>
+                            <div class="row">
+                                <div class="col-6">
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2"><i class="fas fa-basketball-ball text-primary me-2"></i>Básquet</li>
+                                        <li class="mb-2"><i class="fas fa-volleyball-ball text-primary me-2"></i>Vóley</li>
+                                        <li class="mb-2"><i class="fas fa-swimming-pool text-primary me-2"></i>Natación</li>
+                                        <li class="mb-2"><i class="fas fa-running text-primary me-2"></i>Aikido</li>
+                                        <li class="mb-2"><i class="fas fa-water text-primary me-2"></i>Aquagym</li>
+                                        <li class="mb-2"><i class="fas fa-dumbbell text-primary me-2"></i>Entrenamiento Funcional</li>
+                                        <li class="mb-2"><i class="fas fa-futbol text-primary me-2"></i>Escuelita de Fútbol</li>
+                                        <li class="mb-2"><i class="fas fa-khanda text-primary me-2"></i>Esgrima</li>
+                                        <li class="mb-2"><i class="fas fa-futbol text-primary me-2"></i>Fútbol Femenino</li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2"><i class="fas fa-child text-primary me-2"></i>Gimnasia Rítmica</li>
+                                        <li class="mb-2"><i class="fas fa-fist-raised text-primary me-2"></i>Judo</li>
+                                        <li class="mb-2"><i class="fas fa-skating text-primary me-2"></i>Patín Artístico</li>
+                                        <li class="mb-2"><i class="fas fa-table-tennis text-primary me-2"></i>Pelota Paleta</li>
+                                        <li class="mb-2"><i class="fas fa-yoga text-primary me-2"></i>Pilates</li>
+                                        <li class="mb-2"><i class="fas fa-fist-raised text-primary me-2"></i>Taekwondo</li>
+                                        <li class="mb-2"><i class="fas fa-table-tennis text-primary me-2"></i>Tenis con Paleta</li>
+                                        <li class="mb-2"><i class="fas fa-table-tennis text-primary me-2"></i>Tenis de Mesa</li>
+                                        <li class="mb-2"><i class="fas fa-music text-primary me-2"></i>Zumba</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Culturales -->
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title mb-4">Actividades Culturales y Sociales</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-3">
+                                    <i class="fas fa-palette text-primary me-2"></i>
+                                    <strong>Taller de Arte</strong>
+                                    <p class="ms-4 mb-2">Explorá tu creatividad en nuestro espacio artístico</p>
+                                </li>
+                                <li class="mb-3">
+                                    <i class="fas fa-music text-primary me-2"></i>
+                                    <strong>Tango y Milonga</strong>
+                                    <p class="ms-4 mb-2">Aprendé los secretos del baile más tradicional argentino</p>
+                                </li>
+                                <li class="mb-3">
+                                    <i class="fas fa-theater-masks text-primary me-2"></i>
+                                    <strong>Tela</strong>
+                                    <p class="ms-4 mb-2">Desarrollá tu expresión artística y física en las alturas</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mi Casita Restaurant Section -->
+    <section id="restaurant" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Mi Casita Restaurant</h2>
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6">
+                    <div class="restaurant-image-container hover-lift">
+                        <img src="assets/mi-casita.png" alt="Mi Casita Restaurant" class="img-fluid" style="max-width: 300px;">
+                        <div class="restaurant-badge">
+                            <span><i class="fas fa-star me-2"></i>Desde 1926</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="restaurant-content ps-lg-4">
+                        <h3 class="mb-4">Sabores que te hacen sentir en casa</h3>
+                        <p class="lead mb-4">Disfrutá de la mejor cocina casera en nuestro acogedor restaurante. Un espacio donde cada plato está preparado con amor y tradición.</p>
+                        <div class="restaurant-features">
+                            <div class="feature-item mb-3">
+                                <i class="fas fa-clock text-primary me-2"></i>
+                                <span>Martes a Domingo: 11:30 - 15:00 y 19:30 - 23:30</span>
+                            </div>
+                            <div class="feature-item mb-3">
+                                <i class="fas fa-utensils text-primary me-2"></i>
+                                <span>Cocina casera tradicional</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-users text-primary me-2"></i>
+                                <span>Ambiente familiar y acogedor</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-section mt-5">
+                <h3 class="text-center mb-4">Nuestras Especialidades</h3>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <ul class="menu-list">
+                            <li class="menu-item">
+                                <div class="menu-item-content">
+                                    <h4>Milanesa a la Napolitana</h4>
+                                    <p>Nuestra clásica milanesa cubierta con salsa de tomate casera, jamón y queso gratinado. Acompañada de papas fritas doradas.</p>
+                                </div>
+                                <div class="menu-item-price">$4,500</div>
+                            </li>
+                            <li class="menu-item">
+                                <div class="menu-item-content">
+                                    <h4>Sorrentinos de Jamón y Queso</h4>
+                                    <p>Pasta rellena artesanal con jamón y queso, bañada en salsa filetto o crema con champignones.</p>
+                                </div>
+                                <div class="menu-item-price">$4,200</div>
+                            </li>
+                            <li class="menu-item">
+                                <div class="menu-item-content">
+                                    <h4>Bife de Chorizo</h4>
+                                    <p>Jugoso bife de chorizo a la parrilla con guarnición de papas españolas y ensalada mixta.</p>
+                                </div>
+                                <div class="menu-item-price">$5,800</div>
+                            </li>
+                            <li class="menu-item">
+                                <div class="menu-item-content">
+                                    <h4>Ravioles de Verdura</h4>
+                                    <p>Delicados ravioles caseros rellenos de espinaca y ricota, con salsa rosa o estofado de la casa.</p>
+                                </div>
+                                <div class="menu-item-price">$3,900</div>
+                            </li>
+                            <li class="menu-item">
+                                <div class="menu-item-content">
+                                    <h4>Matambre a la Pizza</h4>
+                                    <p>Tierno matambre cubierto con salsa de tomate, mozzarella, orégano y aceitunas. Acompañado de puré de papas.</p>
+                                </div>
+                                <div class="menu-item-price">$4,800</div>
+                            </li>
+                        </ul>
+                        <div class="menu-footer text-center mt-4">
+                            <p class="menu-more">Y muchos platos más para descubrir...</p>
+                            <a href="#contacto" class="btn btn-lg btn-primary hover-lift mt-3">Reservá tu mesa</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Noticias Section -->
+    <section id="noticias" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Últimas Noticias</h2>
+            <div class="row g-4">
+                <!-- Noticia 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Torneo de Básquet Sub-17</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">15 de Febrero, 2024</h6>
+                            <p class="card-text">¡Gran victoria de nuestro equipo en el torneo regional! Clasificamos a las semifinales.</p>
+                            <a href="#" class="btn btn-link">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Noticia 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Nuevo Horario de Vóley</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">10 de Febrero, 2024</h6>
+                            <p class="card-text">Se incorporan nuevos horarios para las categorías infantiles. ¡Consultá los días y horarios!</p>
+                            <a href="#" class="btn btn-link">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Noticia 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Inscripciones Abiertas</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">5 de Febrero, 2024</h6>
+                            <p class="card-text">Ya están abiertas las inscripciones para todas las disciplinas del club.</p>
+                            <a href="#" class="btn btn-link">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Contacto</h2>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="contact-info">
+                        <div class="info-item mb-4">
+                            <h3><i class="fas fa-map-marker-alt me-2"></i>Ubicación</h3>
+                            <p class="mb-0">Independencia 725</p>
+                            <p>San Antonio de Padua, Buenos Aires</p>
+                        </div>
+                        <div class="info-item mb-4">
+                            <h3><i class="fas fa-phone me-2"></i>Teléfonos</h3>
+                            <p class="mb-0">Secretaría: (0220) 482-3333</p>
+                            <p>Administración: (0220) 482-4444</p>
+                        </div>
+                        <div class="info-item mb-4">
+                            <h3><i class="fas fa-clock me-2"></i>Horarios</h3>
+                            <p class="mb-0">Lunes a Viernes: 9:00 - 21:00</p>
+                            <p>Sábados: 9:00 - 18:00</p>
+                        </div>
+                        <div class="social-links">
+                            <h3><i class="fas fa-share-alt me-2"></i>Redes Sociales</h3>
+                            <a href="#" class="me-3" title="Facebook"><i class="fab fa-facebook fa-2x"></i></a>
+                            <a href="#" class="me-3" title="Instagram"><i class="fab fa-instagram fa-2x"></i></a>
+                            <a href="#" title="Twitter"><i class="fab fa-twitter fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-md-12 mb-4">
+                            <div class="map-container">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.0676011606387!2d-58.70299788939597!3d-34.65533106743241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc946aaaaaaaab%3A0x8c48b00f1339be13!2sIndependencia%20725%2C%20B1718%20San%20Antonio%20de%20Padua%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1709595849227!5m2!1ses!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <form class="contact-form">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" placeholder="Nombre" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="email" class="form-control" placeholder="Email" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="text" class="form-control" placeholder="Asunto" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea class="form-control" rows="5" placeholder="Mensaje" required></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary w-100">Enviar Mensaje</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section id="sponsors" class="sponsors-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Nuestros Sponsors</h2>
+            <div class="sponsors-container">
+                <div class="sponsors-grid">
+                    <!-- Koch Panificadora -->
+                    <div class="sponsor-item">
+                        <div class="sponsor-card">
+                            <img src="assets/sponsors/koch-panificadora.jpg" alt="Koch Panificadora" class="sponsor-img">
+                            <div class="sponsor-overlay">
+                                <h4>Koch Panificadora</h4>
+                                <p>Panadería artesanal de calidad</p>
+                                <a href="#" class="btn btn-light btn-sm">Visitar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pinturería Orlando -->
+                    <div class="sponsor-item">
+                        <div class="sponsor-card">
+                            <img src="assets/sponsors/pintureria-orlando.png" alt="Pinturería Orlando" class="sponsor-img">
+                            <div class="sponsor-overlay">
+                                <h4>Pinturería Orlando</h4>
+                                <p>Tu pinturería de confianza</p>
+                                <a href="#" class="btn btn-light btn-sm">Visitar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fiambrería y Quesería Buen Gusto -->
+                    <div class="sponsor-item">
+                        <div class="sponsor-card">
+                            <img src="assets/sponsors/fiambreriayqueseria-buen-gusto.png" alt="Fiambrería y Quesería Buen Gusto" class="sponsor-img">
+                            <div class="sponsor-overlay">
+                                <h4>Fiambrería y Quesería Buen Gusto</h4>
+                                <p>Los mejores fiambres y quesos de la zona</p>
+                                <a href="#" class="btn btn-light btn-sm">Visitar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Seguros con SC -->
+                    <div class="sponsor-item">
+                        <div class="sponsor-card">
+                            <img src="assets/sponsors/seguros-con-sc.png" alt="Seguros con SC" class="sponsor-img">
+                            <div class="sponsor-overlay">
+                                <h4>Seguros con SC</h4>
+                                <p>Tu seguridad es nuestra prioridad</p>
+                                <a href="#" class="btn btn-light btn-sm">Visitar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Artículos en Madera Wall -->
+                    <div class="sponsor-item">
+                        <div class="sponsor-card">
+                            <img src="assets/sponsors/articulos-en-madera-wall.png" alt="Artículos en Madera Wall" class="sponsor-img">
+                            <div class="sponsor-overlay">
+                                <h4>Artículos en Madera Wall</h4>
+                                <p>Artesanía en madera de calidad</p>
+                                <a href="#" class="btn btn-light btn-sm">Visitar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <p class="sponsor-cta">¿Querés ser parte de nuestra familia de sponsors?</p>
+                <a href="#contacto" class="btn btn-primary btn-lg">Contactanos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h4 class="mb-4">Sobre Nosotros</h4>
+                    <p>C.A.S.A. de Padua es una institución deportiva y social con más de 95 años de historia en la comunidad de San Antonio de Padua.</p>
+                    <img src="assets/logo.png" alt="CASA de Padua" height="60" class="mt-2">
+                </div>
+                <div class="col-lg-4">
+                    <h4 class="mb-4">Enlaces Rápidos</h4>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#disciplinas">Disciplinas</a></li>
+                        <li><a href="#historia">Historia</a></li>
+                        <li><a href="#actividades">Actividades</a></li>
+                        <li><a href="#noticias">Noticias</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h4 class="mb-4">Newsletter</h4>
+                    <p>Suscribite para recibir las últimas novedades y eventos del club.</p>
+                    <form class="newsletter-form mt-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Tu email" required>
+                            <button class="btn btn-primary" type="submit">Suscribirse</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2024 C.A.S.A. de Padua. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white me-2">Términos y Condiciones</a>
+                    <a href="#" class="text-white">Política de Privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script>
+        // Función para manejar las animaciones al hacer scroll
+        function handleScrollAnimations() {
+            const elements = document.querySelectorAll('.fade-in');
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                if (elementTop < windowHeight * 0.9) {
+                    element.classList.add('visible');
+                }
+            });
+
+            // Navbar scroll effect
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        }
+
+        // Añadir clase fade-in a elementos que queremos animar
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('fade-in');
+        });
+
+        // Marcar el enlace activo en el navbar
+        function setActiveNavLink() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.clientHeight;
+                const scrollPosition = window.scrollY;
+
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    const targetId = section.getAttribute('id');
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${targetId}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }
+
+        // Cerrar navbar en móvil al hacer click
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                const navbarCollapse = document.querySelector('.navbar-collapse');
+                if (navbarCollapse.classList.contains('show')) {
+                    navbarCollapse.classList.remove('show');
+                }
+            });
+        });
+
+        // Escuchar eventos
+        window.addEventListener('scroll', () => {
+            handleScrollAnimations();
+            setActiveNavLink();
+        });
+        
+        // Ejecutar una vez al cargar la página
+        handleScrollAnimations();
+        setActiveNavLink();
+    </script>
+</body>
+</html> 
